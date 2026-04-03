@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoFácil Cursos | Capacitação Profissional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-theme="light"
+
+    <header class="sticky-top bg-surface shadow-sm">
+        <nav class="container d-flex justify-content-between align-items-center py-3">
+            <a href="#" class="navbar-brand fw-bold text-primary"><img src="assets/imgs/InfoFácilCursos.png" alt="logo" class="logo"></a>
+            <div>
+                <a href="#cursos" class="text-decoration-none me-3 nav-link-custom">Cursos</a>
+                <a href="#matricula" class="btn btn-primary btn-sm rounded-pill px-4">Matricule-se</a>
+                <button id="themeToggle" class="btn btn-outline-secondary btn-sm ms-2" aria-label="Alternar tema escuro/claro">
+                    🌙
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section container my-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h1 class="display-4 fw-bold">Dê um up na sua carreira hoje mesmo</h1>
+                    <p class="lead text-muted">Acesse nossas ementas, escolha seu curso e garanta sua vaga sem sair de casa.</p>
+                    <a href="#matricula" class="btn btn-primary btn-lg mt-3">Ver Grade e Horários</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Alunos estudando em laboratório de informática" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <section id="cursos" class="bg-surface py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 fw-bold">Nossas Formações</h2>
+                <div class="row g-4">
+                    <article class="col-md-4">
+                        <div class="card h-100 shadow-sm course-card border-0">
+                            <div class="card-body">
+                                   <img src="assets/imgs/pacote-office.png" alt="pacote-office" class="pacote-office">
+                                <br><span class="badge bg-info text-dark
+                                mb-2">Tecnologia</span>
+                                <h3 class="card-title h5">Pacote Office Completo</h3>
+                                <p class="card-text text-muted small">Domine Word, Excel, PowerPoint e Outlook. Essencial para qualquer rotina de escritório.</p>
+                              
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="col -md-4">
+                        <div class="card h-100 shadow-sm course-card border-0">
+                            <div class="card-body">
+                                 <img src="assets/imgs/Areas-da-administracao-capa-scaled.jpg" alt="" class="adm-body-card">
+                                <br><span class="badge bg-success mb-2">Administração</span>
+                                <h3 class="card-title h5">Gestão e Rotinas</h3>
+                                <p class="card-text text-muted small">Formação completa englobando Assistente de RH, Rotinas Administrativas e Operador de Caixa.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-4">
+                        <div class="card h-100 shadow-sm course-card border-0">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Criatividade</span>
+                                <h3 class="card-title h5">Design Gráfico</h3>
+                                <p class="card-text text-muted small">Aprenda Photoshop, CorelDraw e noções de Marketing Digital para criação de peças publicitárias.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="matricula" class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center mb-4">
+                    <h2 class="fw-bold">Pré-Matrícula Rápida</h2>
+                    <p class="text-muted">Evite filas. Deixe seus dados e nossa secretaria fará a efetivação em minutos.</p>
+                </div>
+                <div class="col-md-6">
+                    <form id="leadForm" class="p-4 bg-surface rounded shadow-sm" novalidate>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label fw-semibold">Nome Completo</label>
+                            <input type="text" class="form-control bg-input" id="nome" placeholder="Ex: João da Silva">
+                            <div class="invalid-feedback">Por favor, insira seu nome completo (mínimo 3 letras).</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-semibold">E-mail</label>
+                            <input type="email" class="form-control bg-input" id="email" placeholder="joao@email.com">
+                            <div class="invalid-feedback">Insira um e-mail válido.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="whatsapp" class="form-label fw-semibold">WhatsApp</label>
+                            <input type="tel" class="form-control bg-input" id="whatsapp" placeholder="(71) 99999-9999">
+                            <div class="invalid-feedback">Insira um número de WhatsApp válido com DDD.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="curso" class="form-label fw-semibold">Qual curso tem interesse?</label>
+                            <select class="form-select bg-input" id="curso">
+                                <option value="" selected disabled>Selecione um curso...</option>
+                                <option value="office">Pacote Office</option>
+                                <option value="admin">Assistente de RH & Rotinas</option>
+                                <option value="design">Design Gráfico (Corel/Photoshop)</option>
+                                <option value="mkt">Marketing Digital</option>
+                            </select>
+                            <div class="invalid-feedback">Selecione uma opção de curso.</div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="turno" class="form-label fw-semibold">Melhor turno para estudar</label>
+                            <select class="form-select bg-input" id="turno">
+                                <option value="" selected disabled>Selecione o turno...</option>
+                                <option value="manha">Manhã</option>
+                                <option value="tarde">Tarde</option>
+                                <option value="noite">Noite</option>
+                                <option value="fds">Finais de Semana</option>
+                            </select>
+                            <div class="invalid-feedback">Escolha o turno de sua preferência.</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">Garantir Minha Vaga</button>
+                    </form>
+                    <div id="successMsg" class="alert alert-success mt-3 d-none" role="alert">
+                        Tudo certo! Nossos consultores entrarão em contato em breve.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2026 InfoFácil Cursos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

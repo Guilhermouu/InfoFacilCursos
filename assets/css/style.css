@@ -1,0 +1,79 @@
+/* Variáveis do Tema (Modo Claro Padrão) */
+:root {
+    --bg-main: #f8f9fa;
+    --bg-surface: #ffffff;
+    --text-main: #212529;
+    --text-muted: #6c757d;
+    --bg-input: #ffffff;
+    --border-color: #dee2e6;
+}
+
+/* Variáveis do Modo Escuro  */
+[data-theme="dark"] {
+    --bg-main: #121212;
+    --bg-surface: #1e1e1e;
+    --text-main: #e0e0e0;
+    --text-muted: #a0a0a0;
+    --bg-input: #2d2d2d;
+    --border-color: #404040;
+}
+
+/* Atributos CSS aplicados  */
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bg-surface {
+    background-color: var(--bg-surface) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Estilização dos inputs para suportar o dark mode */
+.bg-input {
+    background-color: var(--bg-input);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+}
+
+.bg-input:focus {
+    background-color: var(--bg-input);
+    color: var(--text-main);
+}
+
+/* Efeito Hover nos Cards */    
+.course-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.nav-link-custom {
+    color: var(--text-main);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-link-custom:hover {
+    color: #0d6efd;
+}
+
+.logo{
+    width: 200px;
+}
+
+.adm-body-card{
+    width: 200px;
+}
+
+.pacote-office{
+    width: 200px;
+}
