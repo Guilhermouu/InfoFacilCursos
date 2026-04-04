@@ -70,21 +70,25 @@ body {
   color: #0d6efd;
 }
 
-.logo {
-  width: 200px;
+/* Inverte a cor do ícone do menu hambúrguer no modo escuro */
+[data-theme="dark"] .navbar-toggler-icon {
+  filter: invert(1) grayscale(100%) brightness(200%);
 }
 
-.adm-body-card {
+[data-theme="dark"] .navbar-toggler {
+  border-color: var(--border-color);
+}
+
+#logo {
   width: 200px;
+  max-width: 100%; /* Garante que não ultrapasse a tela no mobile */
+}
+
+.adm-body-card,
+.pacote-office,
+.designgrafico-img {
+  width: 200px;
+  max-width: 100%;
   border-radius: 10px;
-}
-
-.pacote-office {
-  width: 200px;
-  border-radius: 10px;
-}
-
-.designgrafico-img{
-    width: 200px;
-    border-radius: 10px;
+  object-fit: cover; 
 }

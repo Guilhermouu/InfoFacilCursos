@@ -9,15 +9,26 @@
 </head>
 <body data-theme="light"
 
-    <header class="sticky-top bg-surface shadow-sm">
-        <nav class="container d-flex justify-content-between align-items-center py-3">
-            <a href="#" class="navbar-brand fw-bold text-primary"><img src="assets/imgs/InfoFácilCursos.png" alt="logo" class="logo"></a>
-            <div>
-                <a href="#cursos" class="text-decoration-none me-3 nav-link-custom">Cursos</a>
-                <a href="#matricula" class="btn btn-primary btn-sm rounded-pill px-4">Matricule-se</a>
-                <button id="themeToggle" class="btn btn-outline-secondary btn-sm ms-2" aria-label="Alternar tema escuro/claro">
-                    🌙
+    <<header class="sticky-top bg-surface shadow-sm">
+        <nav class="navbar navbar-expand-md py-3">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/imgs/InfoFácilCursos.png" alt="logo" class="img-fluid" id="logo">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuTopo" aria-controls="menuTopo" aria-expanded="false" aria-label="Abrir navegação">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="menuTopo">
+                    <div class="d-flex flex-column flex-md-row align-items-md-center mt-3 mt-md-0 text-center">
+                        <a href="#cursos" class="text-decoration-none mb-3 mb-md-0 me-md-3 nav-link-custom">Cursos</a>
+                        <a href="#matricula" class="btn btn-primary btn-sm rounded-pill px-4 mb-3 mb-md-0 mx-auto mx-md-0">Matricule-se</a>
+                        <button id="themeToggle" class="btn btn-outline-secondary btn-sm ms-md-2 mx-auto mx-md-0" aria-label="Alternar tema escuro/claro" style="width: fit-content;">
+                            🌙
+                        </button>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -37,7 +48,7 @@
         </section>
 
         <section id="cursos" class="bg-surface py-5">
-            <div class="container">
+            <div class="container-fluid">
                 <h2 class="text-center mb-5 fw-bold">Nossas Formações</h2>
                 <div class="row g-4">
                     <article class="col-md-4">
@@ -53,7 +64,7 @@
                         </div>
                     </article>
                     
-                    <article class="col -md-4">
+                    <article class="col-md-4">
                         <div class="card h-100 shadow-sm course-card border-0">
                             <div class="card-body">
                                  <img src="assets/imgs/Areas-da-administracao-capa-scaled.jpg" alt="" class="adm-body-card">
@@ -145,5 +156,6 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
